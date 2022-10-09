@@ -28,7 +28,7 @@ if __name__ == '__main__':
             icons=['house', 'moisture'],
             styles={
                 'icon': {'font-size': '18px'},
-                'nav-link-selected': {'background-color': '#1d1629'}
+                'nav-link-selected': {'background-color': '#8cdaf9'}
             },
             orientation='vertical',
         )
