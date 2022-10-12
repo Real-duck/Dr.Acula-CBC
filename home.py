@@ -57,7 +57,7 @@ def home():
     st.markdown(
         'Dieser Algorithmus erkennt verbundene Objekte in einem binären Bild, also das Ergebnis der Segmentation.'
         'Component labeling kann auch für das Zählen benutzt werden. [Mehr zum benutzten Verfahren] (https://pyimagesearch.com/2021/02/22/opencv-connected-component-labeling-and-analysis/)')
-    st.image(Image.open('images/component_labeling.png'), caption='Component labeling für rote Blutkörperchen',
+    st.image(Image.open('images/t.jpeg'), caption='Component labeling für rote Blutkörperchen',
                 width=400)
     st.markdown('___')
     st.markdown('___Distance transform___:')
