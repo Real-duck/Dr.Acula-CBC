@@ -63,6 +63,6 @@ def home():
     st.markdown('___Distance transform___:')
     st.markdown(
         'Diese Methode nimmt ein binäres Bild und gibt ein grayscale Bild zurück, das die Distanz zwischen den Pixeln repräsentiert. '
-        'Je weiter ein Pixel vom Rand entfernt ist, desto heller wird er sein. [Mehr zum benutzten Verfahren](https://homepages.inf.ed.ac.uk/rbf/HIPR2/distance.htm)')
-    st.image(Image.open('images/distance_transform.png'), caption='Distance transform für rote Blutkörperchen',
+        'Je weiter ein Pixel vom Rand entfernt ist, desto heller wird er sein. Dieses Verfahren kann man aktuell nur isoliert unter der Option "Zählen?" benutzen[Mehr zum benutzten Verfahren](https://homepages.inf.ed.ac.uk/rbf/HIPR2/distance.htm)')
+    st.image(Image.open('images/output.png'), caption='Distance transform für rote Blutkörperchen',
                  width=400)
