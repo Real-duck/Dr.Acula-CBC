@@ -28,25 +28,9 @@ def home():
                'eine sich oft wiederholende, aber auch wichtige Aufgabe, vom Zählen der Arten von Blutkörperchen übernehmen.')
     st.markdown('___')
 
-    st.markdown('## Wie benutze ich die Website?')
-    st.markdown('Auf dieser Seite gibt es verschiedene Module, das CBC Modul kann Blutzellen von einem Blutbild, welches mit einem '
-                'Mikroskop aufgenommen wurde, segmentieren und typisieren. Das WBC Modul kann weiße Blutzellen Klassifizieren. '
-                'Dafür muss man aktuell die weiße Blutzelle ausschneiden und dann hochladen. Bei größeren Bildern wird das hochgeladene '
-                'Bild aktuell nur in 600x600 aufgeteilt. In der Zukunft soll dafür eine KI benutzt werden, welche alle Zellen automatisch '
-                'findet und ausschneided.')
-    st.image(Image.open('images/reprs.jpg'), caption='Dimiension sind falsch', width=400)
-    st.markdown('___')
-    #st.markdown('Github: Kommt Bald!')
 
-    #st.markdown('## Wie funktioniert die Website? ')
-    #           'Dies ist eine sehr komprimierte Version von Dr. Acula. ')
 
     #st.markdown('## Die Einstellungen ')
-
-    #st.markdown('#### Modeltypen')
-    #st.markdown(
-    #            'SegNet und U-Net sind die beiden Architekturen, die von Dr. Acula verwendet werden kann. Da beide die Farben der einzelnen Körperchen ' 
-    #            '')
 
     #st.markdown('#### Transformationen')
     #st.markdown(
@@ -82,18 +66,3 @@ def home():
     #     'Je weiter ein Pixel vom Rand entfernt ist, desto heller wird er sein. [Mehr zum benutzten Verfahren](https://homepages.inf.ed.ac.uk/rbf/HIPR2/distance.htm)')
     # st.image(Image.open('images/distance_transform.png'), caption='Distance transform für rote Blutkörperchen',
     #             width=400)
-
-    st.markdown('## Wie funktioniert die Typisierung?')
-    st.markdown('Es wird eine Support vector machine für die Typisierung benutzt. Vereinfacht funktioniert diese mithilfe einer '
-                'Trennlinie, welche die Datenpunkte trennt. Die Datenpunkte, die auf der einen Seite der Linie liegen, werden als '
-                'eine Klasse und die anderen als eine andere Klasse betrachtet. Die Trennlinie wird so gewählt, dass sie die '
-                'Datenpunkte mit einem so groß wie möglichen Abstand trennt. Die Trennlinie ist als Kernel bekannt, der Name kommt von dem Kernel Trick.')
-    st.markdown('GitHub: <https://github.com/DavidRutkevich/DR.Acula-SVM>')
-    st.markdown('___')
-    st.markdown('## Wie werden die Datenpunkte ermittelt? ')
-    st.markdown('Die Datenpunkte werden mit Hilfe von Segmentierung und Feature Extraction ermittelt. '
-                'Die Segmentierung basiert auf einen neuen Algorithmus, welcher die Nuklei schnell und genau segmentiert. '
-                'Um das Zytoplasma zu extrahieren, wird der Nukleus Segmentiert und dann die Konevexe Hülle von diesem ermittelt. '
-                'Das Zytoplasma in dieser Hülle reicht voll kommen aus, um wichtige Eigenschaften zu extrahieren.')
-    st.markdown('___')
-
