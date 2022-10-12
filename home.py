@@ -29,10 +29,8 @@ def home():
     st.markdown('___')
     
     st.markdown('### Blutzellen was das??')
-    if st.theme() == 'Dark':
-        st.image(Image.open('images/re1dark.png'))
-    else:
-        st.image(Image.open('images/re1.png'))
+    st.image(Image.open('images/re1dark.png'))
+
     
     st.markdown('## Die Einstellungen ')
     st.markdown('__Die Einstellungen werden an dem ersten Mikroskop Bild, was man im Netz finden kann, erklärt__.')
