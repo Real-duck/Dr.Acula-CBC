@@ -43,7 +43,7 @@ def home():
     st.markdown('___Threshold___:')
     st.markdown('Beim Thresholding werden Vordergrundpixel vom Hintergrund seperiert. '
                 ' Die Pixel, die zum Vordergrund gehören sind Weiß, die, die zum Hintergrund gehören sind Schwarz. [Mehr zum benutzten Verfahren](https://www.wikiwand.com/en/Otsu%27s_method)')
-    st.image(Image.open('images/threshold_edge_mask.png'), caption='Thresholding für rote Blutkörperchen',
+    st.image(Image.open('images/threshold_mask.png'), caption='Thresholding für rote Blutkörperchen',
                 width=400)
     st.markdown('___')# 
     st.markdown('___Hough Transform___:')
